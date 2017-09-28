@@ -1,0 +1,202 @@
+@import url('http://fonts.googleapis.com/css?family=Raleway:100,300,400,500,600,700');
+
+/*@font-face {*/
+	/*font-family: '29LT Bukra';*/
+	/*src: url('../fonts/29LTBukra-Regular.eot');*/
+	/*src: url('../fonts/29LTBukra-Regular.eot?#iefix') format('embedded-opentype'),*/
+		/*url('../fonts/29LTBukra-Regular.woff') format('woff'),*/
+		/*url('../fonts/29LTBukra-Regular.ttf') format('truetype');*/
+	/*font-weight: normal;*/
+	/*font-style: normal;*/
+/*}*/
+
+/*=============================
+	Reset Styles
+=============================*/
+body{color: #666666; font-family: '29LT Bukra', sans-serif; font-weight: normal; font-size: 13px;}
+
+h1,h2,h3,h4,h5{font-weight: bold; text-transform: capitalize; color: rgb(40, 121, 202);}
+h2{font-size: 26px;}
+h3{font-size: 22px;}
+a{color: rgb(40, 121, 202);}
+a:hover{color: #f6921e;}
+a:focus{outline: none !important;}
+img{max-width: 100%;}
+blockquote{font-size: 14px;}
+p{margin-bottom: 5px;}
+
+/*=============================
+	General Styles
+=============================*/
+/* Colors */
+.main-color{color: #f6921e;}
+.main-bg{background: #f6921e;}
+
+.main-color-dark{color: rgb(153, 153, 153);}
+.main-bg-dark{background: rgb(153, 153, 153);}
+
+.grey-bg{background: rgb(206,206,206);}
+
+/* Buttons */
+.btn{border-radius: 3px; font-weight: 500; font-size: 13px;}
+.btn-lg{padding: 15px;}
+
+.btn-main{background: #f6921e; color: #fff !important;}
+.btn-sec{background: rgb(40, 121, 202); color: #fff;}
+.btn-main:hover , .btn-main:focus, .btn-sec:hover , .btn-sec:focus{color: #fff !important; background: rgb(109, 109, 109) !important;}
+
+.btn-border-white{background: rgba(255,255,255, .2); border:2px solid #fff; color: #fff; font-weight: bold;}
+.btn-border-white:hover , .btn-border-white:focus{color: #fff; background: rgba(255,255,255, .3)}
+
+.btn-google{background: #ea4335; border-color: #d13225;}
+.btn-google:hover{background: #d13225; border-color: #d13225;}
+
+/* Heading */
+.title{color: #f6921e; margin-top: 0; margin-bottom: 20px; font-size: 19px; border-bottom: 1px dashed #ddd; padding-bottom: 15px; text-transform: capitalize;}
+.sub-title{font-size: 16px; border-bottom: 1px dashed #ddd; padding-bottom: 15px; text-transform: capitalize; margin-bottom: 20px;}
+.title , .sub-title{font-weight: bold;}
+
+/* Text */
+.uppercase{text-transform: uppercase;}
+.success-text{color: #0ab04b;}
+.danger-text{color: #d43f3a;}
+.orange-text{color: #f6921e;}
+
+.font-lg{font-size: 20px;}
+.font-md{font-size: 16px;}
+
+/* Forms */
+.form-control{border-radius: 0; height: 40px; font-size: 13px;}
+.input-icon{position: relative;}
+.input-icon .fa{color: #333; font-size: 18px; padding: 10px 0; line-height: 1; position: absolute; left: 0; bottom: 0; height: 40px; width: 40px; text-align: center; background: #eee; border: 1px solid #ccc;}
+.input-icon .form-control{padding-left: 50px;}
+
+.form-horizontal .form-group{margin-bottom: 25px;}
+.form-action{padding-top: 15px; border-top: 1px dashed #ddd;}
+
+/* Blocks & Boxes*/
+.white-block{margin: 0 auto; box-shadow: 0 0 4px #ddd; -moz-box-shadow: 0 0 4px #ddd; -webkit-box-shadow: 0 0 4px #ddd; background: #fff; margin-bottom: 25px; border-radius: 4px; padding: 15px;}
+
+/* Spacing */
+.nomargin{margin: 0;}
+
+.topmargin-lg{margin-top: 40px;}
+.topmargin{margin-top: 20px;}
+.topmargin-sm{margin-top: 10px; display: block;}
+
+.btmmargin{margin-bottom: 20px;}
+.btmmargin-sm{margin-bottom: 10px;}
+.btmmargin-lg{margin-bottom: 40px;}
+
+@media all and (max-width:767px){
+	.topmargin-lg{margin-top: 20px;}
+}
+
+/* Grid */
+.col-sm-15{float: left; width: 20%; padding: 0 15px;}
+
+@media all and (max-width:767px){
+	.col-sm-15{width: 50%;}
+}
+
+/*=============================
+	Header Styles
+=============================*/
+.header{padding: 10px 0; position: relative; z-index: 3; background: #2b3841; border-top: 5px solid #f6921e;}
+.header .logo img{height: 30px;}
+
+.header .navbar{margin: 0; border: none; background: none; min-height: 0;}
+.header .navbar-toggle{margin-top: 0; margin-bottom: 0;}
+.header .navbar-nav > li > a{font-size: 14px; font-weight: 700; text-transform: capitalize; color: #fff;}
+.header .navbar-nav > li > a:hover{color: #333;}
+
+.internal-header .logo img{ margin: 0;}
+.user-profile-menu{text-align: right;}
+.user-profile-menu a{color: #aaa; font-size: 22px; padding: 0 5px; position: relative;}
+.user-profile-menu a:hover{opacity: .8;}
+.highlight-dot{position: absolute; ; width: 10px; height: 10px; border-radius: 100%; background: #f6921e; display: inline-block; left: 5px; top: 5px;}
+
+.navbar-toggle{background: #eee;}
+
+@media all and (max-width:767px){
+	.navbar-collapse{position: absolute; right: -15px; z-index: 100; background: #f6921e; padding: 0; margin: 0; width: 100%; min-width: 360px; top: 44px;}
+	.navbar-nav{margin: 0;}
+	.navbar-nav > li{border-bottom: 1px solid rgba(255,255,255, .4);}
+}
+
+/*=============================
+	Footer Styles
+=============================*/
+.footer{background: #000; color: rgb(206, 206, 206); padding: 20px 0;}
+
+/*=============================
+	Admin pages Styles
+=============================*/
+.container{width: 100%; max-width: 1170px;}
+.content-wrapper{padding: 20px 0; min-height: 500px;}
+
+.table > tbody > tr > td{vertical-align: middle;}
+
+/* Dashboard */
+.dashboard-box{}
+.dashboard-box a{display: block;border: 1px dashed #ddd; border-radius: 5px; margin-bottom: 30px; padding: 20px; text-align: center; color: #999; text-decoration: none;}
+.dashboard-box a:hover{background: #fafafa;}
+.dashboard-box a span , .dashboard-box a strong, .dashboard-box a i{display: block;}
+.dashboard-box a i{ font-size: 30px; }
+.dashboard-box a strong{ font-size: 30px; margin: 5px 0; color: rgb(40, 121, 202);}
+.dashboard-box a span{font-size: 16px;}
+
+.table-search{margin-bottom: 20px;}
+
+/* Sidebar */
+.user-profile{padding: 20px;}
+.user-profile *{display: block;}
+.user-profile i{ border-radius: 100%; display: inline-block; font-size: 40px; height: 75px; margin-bottom: 10px; padding: 15px; padding-top: 17px; width: 75px; background: rgb(255,255,255, .6); color: #999; border: 1px solid #ddd;}
+
+.sidebar ul{list-style: none;}
+.sidebar .list-group-item{border-radius:0 !important;}
+.sidebar .list-group-item .fa{margin-right: 5px;}
+.list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover{background-color: rgb(153,153,153);}
+
+
+/*=================================
+	Captain Pages
+=================================*/
+
+/* Login & Registration Styles*/
+.center-form{margin: 0 auto; padding: 20px; box-shadow: 0 0 4px #ddd; -moz-box-shadow: 0 0 4px #ddd; -webkit-box-shadow: 0 0 4px #ddd; background: #fff;}
+.center-form h3{text-align: center; margin: 0; margin-bottom: 20px;}
+
+.login-form{max-width: 500px;}
+
+/* User Dashboard */
+.user-das{padding: 0;}
+.user-dash h2{margin: 0; color: #fff; padding: 15px; font-size: 18px; font-weight: bold; border-radius: 4px 4px 0 0;}
+.complete-status{padding: 15px;}
+.user-dash .progress{margin: 0;}
+
+.user-course{padding: 15px;}
+.user-course h2{margin-top: 0; font-size: 18px; color: #666;}
+
+/* Application */
+.kamel-form i{border:3px solid #ccc; border-radius: 50%; padding: 10px; font-size: 30px; display: inline-block; width: 60px; height: 60px; color: #bbb; padding-top: 12px;}
+
+.popup-modal{overflow: hidden; position: relative;}
+.message-modal{background: rgb(0,0,0, .6); position: absolute; left: 0; top: 0; width: 100%; height: 100vh; z-index: 100; padding: 0 15px;}
+.popup-content{max-width: 500px; margin: 0 auto; margin-top: 150px; box-shadow: 0 0 4px #333; -moz-box-shadow: 0 0 4px #333; -webkit-box-shadow: 0 0 4px #333; position: relative;}
+.popup-content i{font-size: 40px; border:2px solid #0ab04b; padding: 10px; border-radius: 100%;}
+.close-popup{position: absolute; top: 0; right: 0;}
+
+/*=============================
+	Internal Pages Styles
+=============================*/
+.internal-page{padding: 40px 0; min-height: 500px;}
+.page-banner{background: #fafafa; font-size: 16px; padding: 15px; border-bottom: 1px solid #eee;}
+
+
+
+/* Responsive */
+
+@media all and (max-width:480px){
+	.title a{float: none !important; display: block; margin-top: 10px;}
+}

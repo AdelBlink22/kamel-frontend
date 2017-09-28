@@ -6,6 +6,11 @@ import registerServiceWorker from './registerServiceWorker';
 import { Provider } from 'react-redux'
 import store from './store';
 
+// import style css
+import './utils/css/styles.css'
+// import './utils/css/font-awesome.min.css'
+
+
 // cookie provider, it provide cookies to all components
 import { CookiesProvider} from 'react-cookie';
 

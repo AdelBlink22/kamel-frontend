@@ -33,11 +33,7 @@ class Login extends React.Component {
     notification = ()=> {
         if(this.props.errorMessage){
             return (
-                <div className="mt-3">
-                    <div className="alert alert-danger" role="alert">
-                        <strong>{this.props.errorMessage}</strong>
-                    </div>
-                </div>
+                <div className="alert alert-danger" role="alert"> <strong>Error!</strong> {this.props.errorMessage}. </div>
             );
         }
     };
@@ -45,18 +41,27 @@ class Login extends React.Component {
     render() {
         return (
             <Layout>
-                <div className="row justify-content-center mt-3">
-                    <div className="col">
-                        {this.notification()}
-                        <div className="card">
-                            <div className="card-body">
-                                <h4 className="card-title">Login</h4>
-                                <p className="card-text"> Login as Captain  </p>
-                                <LoginForm onSubmit={this.handleSubmit}/>
-                            </div>
-                        </div>
-                    </div>
+                <div className="text-center btmmargin">
+                    <h3 className="uppercase">Login</h3>
+                    <p>Login as Captain</p>
                 </div>
+                <div className="login-form center-form">
+                    {this.notification()}
+                    <LoginForm onSubmit={this.handleSubmit}/>
+                </div>
+                {/*<div className="row justify-content-center mt-3">*/}
+                    {/*<div className="col">*/}
+                        {/*{this.notification()}*/}
+                        {/*<div className="card">*/}
+                            {/*<div className="card-body">*/}
+                                {/*<h4 className="card-title">Login</h4>*/}
+                                {/*<p className="card-text"> Login as Captain  </p>*/}
+                                {/*<LoginForm onSubmit={this.handleSubmit}/>*/}
+                            {/*</div>*/}
+                        {/*</div>*/}
+                    {/*</div>*/}
+                {/*</div>*/}
+                <p class="text-center topmargin">You don't have account?<a href="/register"> Register</a></p>
             </Layout>
         );
     }

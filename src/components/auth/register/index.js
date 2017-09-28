@@ -29,11 +29,7 @@ class Register extends React.Component {
     notification = ()=> {
         if (this.props.errorMessage) {
             return (
-                <div className="mt-3">
-                    <div className="alert alert-danger" role="alert">
-                        <strong>{this.props.errorMessage}</strong>
-                    </div>
-                </div>
+                <div className="alert alert-danger" role="alert"><strong>Error!</strong> {this.props.errorMessage}.</div>
             );
         }
     };
@@ -45,18 +41,15 @@ class Register extends React.Component {
     render() {
         return (
             <Layout>
-                <div className="row justify-content-center mt-3">
-                    <div className="col">
-                        {this.notification()}
-                        <div className="card">
-                            <div className="card-body">
-                                <h4 className="card-title">Registration</h4>
-                                <p className="card-text"> Register as Captain  </p>
-                                <RegisterForm onSubmit={this.handleSubmit}/>
-                            </div>
-                        </div>
-                    </div>
+                <div className="text-center btmmargin">
+                    <h3 className="uppercase">Create New Account</h3>
+                    <p>Register as Captain</p>
                 </div>
+                <div className="login-form center-form">
+                    { this.notification() }
+                    <RegisterForm onSubmit={this.handleSubmit}/>
+                </div>
+                <p class="text-center topmargin">Already a member?<a href="/login"> Login</a></p>
             </Layout>
         );
     }
