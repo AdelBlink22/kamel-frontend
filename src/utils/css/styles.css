@@ -103,10 +103,10 @@ p{margin-bottom: 5px;}
 	Header Styles
 =============================*/
 .header{padding: 10px 0; position: relative; z-index: 3; background: #2b3841; border-top: 5px solid #f6921e;}
-.header .logo img{height: 30px;}
+.header .logo img{height: 50px; padding: 5px;}
 
 .header .navbar{margin: 0; border: none; background: none; min-height: 0;}
-.header .navbar-toggle{margin-top: 0; margin-bottom: 0;}
+.header .navbar-toggle{ margin-bottom: 0;}
 .header .navbar-nav > li > a{font-size: 14px; font-weight: 700; text-transform: capitalize; color: #fff;}
 .header .navbar-nav > li > a:hover{color: #333;}
 

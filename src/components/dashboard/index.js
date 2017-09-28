@@ -1,7 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux'
 
-
 // with router
 import { withRouter } from 'react-router-dom'
 
@@ -10,6 +9,8 @@ import { withCookies } from 'react-cookie'
 
 // log out action
 import { logoutUser } from '../../actions/auth'
+
+import Layout from '../layout/index'
 
 class Dashboard extends React.Component {
     componentWillMount(){
@@ -24,9 +25,9 @@ class Dashboard extends React.Component {
 
     render() {
         return (
-            <div>
+            <Layout>
                 <button onClick={this.logOut}> Log out </button>
-            </div>
+            </Layout>
 
         );
     }

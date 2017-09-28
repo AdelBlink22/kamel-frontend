@@ -61,7 +61,7 @@ class Login extends React.Component {
                         {/*</div>*/}
                     {/*</div>*/}
                 {/*</div>*/}
-                <p class="text-center topmargin">You don't have account?<a href="/register"> Register</a></p>
+                <p className="text-center topmargin">You don't have account?<a href="/register"> Register</a></p>
             </Layout>
         );
     }
