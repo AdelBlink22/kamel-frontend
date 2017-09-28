@@ -38,6 +38,7 @@ export function postData(action, errorType, isAuthReq, url, dispatch, data) {
 
     axios.post(requestUrl, data, headers)
         .then((response) => {
+        console.log(response.data);
             dispatch({
                 type: action,
                 payload: response.data,

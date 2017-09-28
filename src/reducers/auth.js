@@ -10,7 +10,6 @@ const INITIAL_STATE = { error: '', message: '', authenticated: false };
 
 // export auth reducer
 export default (state= INITIAL_STATE, action) => {
-    console.log(action);
     switch(action.type) {
         case AUTH_USER:
             return { ...state, error: '', message: '', authenticated: true };
