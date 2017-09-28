@@ -6,7 +6,7 @@ import axios from 'axios'
 //
 
 export const API_URL            = 'https://kaspercab-kamel.herokuapp.com/api';
-export const CLIENT_ROOT_URL    = 'https://kamel-front-end.herokuapp.com/';
+export const CLIENT_ROOT_URL    = 'https://kamel-front-end.herokuapp.com';
 
 
 
