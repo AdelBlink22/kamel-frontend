@@ -108,7 +108,7 @@ p{margin-bottom: 5px;}
 .header .navbar{margin: 0; border: none; background: none; min-height: 0;}
 .header .navbar-toggle{ margin-bottom: 0;}
 .header .navbar-nav > li > a{font-size: 14px; font-weight: 700; text-transform: capitalize; color: #fff;}
-.header .navbar-nav > li > a:hover{color: #333;}
+.header .navbar-nav > li > a:hover{color: #f48000;}
 
 .internal-header .logo img{ margin: 0;}
 .user-profile-menu{text-align: right;}
@@ -119,10 +119,12 @@ p{margin-bottom: 5px;}
 .navbar-toggle{background: #eee;}
 
 @media all and (max-width:767px){
-	.navbar-collapse{position: absolute; right: -15px; z-index: 100; background: #f6921e; padding: 0; margin: 0; width: 100%; min-width: 360px; top: 44px;}
-	.navbar-nav{margin: 0;}
-	.navbar-nav > li{border-bottom: 1px solid rgba(255,255,255, .4);}
+    .navbar-collapse{position: absolute; right: -15px; z-index: 100; background: #f6921e; padding: 0; margin: 0; width: 100%; min-width: 360px; top: 44px;}
+    .navbar-nav{margin: 0;}
+    .navbar-nav > li{border-bottom: 1px solid rgba(255,255,255, .4);}
+    .header .navbar-nav > li > a:hover{color: #333;}
 }
+
 
 /*=============================
 	Footer Styles

@@ -7,15 +7,21 @@ import { withRouter } from 'react-router-dom'
 // with cookies
 import { withCookies } from 'react-cookie'
 
-// log out action
-import { logoutUser } from '../../actions/auth'
+// number of courses completed action
+import { fetchCoursesCompleted } from '../../actions/courses'
+import { fetchApplicationProgress } from '../../actions/application'
 
 import Layout from '../layout/index'
+import Courses from './courses'
+import Application from './application'
+import Permit from './permit'
 
 class Dashboard extends React.Component {
     componentWillMount(){
         const { cookies } = this.props;
         if (!cookies.get('user')) { this.props.history.push('/login')}
+        this.props.fetchCoursesCompleted(cookies.get('user')._id);
+        this.props.fetchApplicationProgress(cookies.get('user')._id);
     }
 
     logOut = (e)=> {
@@ -26,7 +32,22 @@ class Dashboard extends React.Component {
     render() {
         return (
             <Layout>
-                <button onClick={this.logOut}> Log out </button>
+                <div className="container" style={{ maxWidth: 600 + 'px', margin: 0 + 'auto' }}>
+                    <div className="alert alert-info">
+                        <h4>Hello, Captain!</h4>
+                        <p>Please complete the courses and fill out the application to obtain KAMEL's permit</p>
+                    </div>
+
+                    {/* Permit component will be visible if the user have finished the two sections */}
+                    <Permit/>
+
+                    {/* Courses component */}
+                    <Courses videos={this.props.progress.videos} complete={this.props.progress.watched}/>
+
+                    {/* Application component */}
+                    <Application percentage={this.props.percentage} />
+                </div>
+
             </Layout>
 
         );
@@ -36,9 +57,9 @@ class Dashboard extends React.Component {
 
 function mapStateToProps(state) {
     return {
-      progress: '',
-      application: ''
+      progress: state.courses.progress,
+      percentage: state.application.progress
     };
 }
 
-export default connect(mapStateToProps, { logoutUser })(withRouter(withCookies(Dashboard)));
+export default connect(mapStateToProps, { fetchCoursesCompleted, fetchApplicationProgress })(withRouter(withCookies(Dashboard)));
