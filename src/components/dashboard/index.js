@@ -21,8 +21,10 @@ class Dashboard extends React.Component {
     componentWillMount(){
         const { cookies } = this.props;
         if (!cookies.get('user')) { this.props.history.push('/login')}
-        this.props.fetchCoursesCompleted(cookies.get('user')._id);
-        this.props.fetchApplicationProgress(cookies.get('user')._id);
+        else {
+            this.props.fetchCoursesCompleted(cookies.get('user')._id);
+            this.props.fetchApplicationProgress(cookies.get('user')._id);
+        }
     }
 
     logOut = (e)=> {

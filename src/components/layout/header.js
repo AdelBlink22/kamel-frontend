@@ -106,7 +106,7 @@ class Header extends React.Component {
                         <div className="col-xs-6">
                             <figure className="logo">
                                 <a href="/">
-                                    <img src={require('../../utils/images/captain.svg')} alt="Kasper Cabs" className="img-responsive"/>
+                                    <img src={require('../../utils/images/kamel.svg')} alt="Kasper Cabs" className="img-responsive"/>
                                 </a>
                             </figure>
                         </div>

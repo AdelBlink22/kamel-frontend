@@ -13,7 +13,9 @@ class Profile extends React.Component {
     componentWillMount(){
         const { cookies } = this.props;
         if (!cookies.get('user')) { this.props.history.push('/login')}
-        this.props.fetchProfile(cookies.get('user')._id)
+        else {
+            this.props.fetchProfile(cookies.get('user')._id)
+        }
     }
 
     changeView = (e)=> {

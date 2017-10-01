@@ -12,7 +12,9 @@ class Courses extends React.Component {
     componentWillMount(){
         const { cookies } = this.props;
         if (!cookies.get('user')) { this.props.history.push('/login')}
-        this.props.fetchCourses();
+        else {
+            this.props.fetchCourses();
+        }
     }
 
     renderCourses = ()=> {
