@@ -21,6 +21,10 @@ export function errorHandler(dispatch, error, type) {
         //return dispatch(logoutUser(errorMessage));
     }
 
+    if (error.status === 404) {
+        errorMessage = 'Nothing was found.';
+    }
+
     dispatch({
         type,
         payload: errorMessage,

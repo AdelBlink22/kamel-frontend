@@ -9,10 +9,12 @@ import authReducer from './auth'
 import captainReducer from './captain'
 import coursesReducer from './courses'
 import applicationReducer from './application'
+import userReducer from './user'
 
 const rootReducer = combineReducers({
     form: reduxReducer.plugin({}),
     auth: authReducer,
+    user: userReducer,
     captain: captainReducer,
     courses: coursesReducer,
     application: applicationReducer

@@ -15,6 +15,9 @@ import Register from './components/auth/register/index'
 
 //main pages
 import Dashboard from './components/dashboard/index'
+import Courses from './components/courses/index'
+import Video from './components/courses/video'
+import Profile from './components/profile/index'
 
 class Routes extends Component {
     render(){
@@ -25,6 +28,10 @@ class Routes extends Component {
                     <Route path="/login"    component={Login}/>
                     <Route path="/register" component={Register}/>
                     <Route path="/dashboard" component={Dashboard}/>
+
+                    <Route exact path="/courses" component={Courses}/>
+                    <Route path="/courses/:id" component={Video}/>
+                    <Route path="/profile" component={Profile}/>
 
                     <Route component={NotFound}/>
 
