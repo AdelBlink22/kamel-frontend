@@ -18,6 +18,10 @@ import Dashboard from './components/dashboard/index'
 import Courses from './components/courses/index'
 import Video from './components/courses/video'
 import Profile from './components/profile/index'
+import Application from './components/application/index'
+
+//
+import Test from './components/application/test'
 
 class Routes extends Component {
     render(){
@@ -32,6 +36,7 @@ class Routes extends Component {
                     <Route exact path="/courses" component={Courses}/>
                     <Route path="/courses/:id" component={Video}/>
                     <Route path="/profile" component={Profile}/>
+                    <Route path="/application" component={Application}/>
 
                     <Route component={NotFound}/>
 

@@ -37,9 +37,9 @@ class Profile extends React.Component {
         } else {
             return (
                 <div className="container" style={{ maxWidth: 600 + 'px', margin: 0 + 'auto' }}>
-                    <div className="captain-info btmmargin" style={{borderBottom: 1 + 'px' + ' dashed ' + '#ccc', paddingBottom: 15+ 'px'}}>
+                    <div className="captain-info btmmargin" style={{borderBottom: 1 + 'px dashed #ccc', paddingBottom: 15+ 'px'}}>
                         <div className="row">
-                            <div className="col-xs-3"><img src={require('../../utils/images/user.png')} width="60"/></div>
+                            <div className="col-xs-3"><img alt="profile" src={require('../../utils/images/user.png')} width="60"/></div>
                             <div className="col-xs-6">
                                 <p className="topmargin"><i className="fa fa-check success-text"></i> <strong>User Name here</strong></p>
                             </div>
@@ -53,21 +53,6 @@ class Profile extends React.Component {
                     <p><strong>Password: </strong>***** </p>
 
                 </div>
-                // <div className="mt-3">
-                //     <div className="form-group">
-                //         <label htmlFor="exampleInputEmail1">Email address</label>
-                //         <p>{this.props.user.email}</p>
-                //     </div>
-                //     <div className="form-group">
-                //         <label htmlFor="exampleInputEmail1">Phone number</label>
-                //         <p>{this.props.user.phone}</p>
-                //     </div>
-                //     <div className="form-group">
-                //         <label htmlFor="exampleInputEmail1">password</label>
-                //         <p>********</p>
-                //     </div>
-                //     <button id="edit" className="btn btn-primary btn-lg btn-block" onClick={this.changeView}>Edit</button>
-                // </div>
             );
         }
     };

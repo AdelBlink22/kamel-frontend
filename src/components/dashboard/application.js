@@ -14,7 +14,7 @@ export default class Application extends React.Component {
         return (
             <div className="white-block user-dash">
                 <h2 style={{background: '#f6921e' }}>Kamel Application</h2>
-                <div><a href="/application"><img src={require('../../utils/images/img2.jpg')}/></a></div>
+                <div><a href="/application"><img alt="application" src={require('../../utils/images/img2.jpg')}/></a></div>
                 <div className="row complete-status">
                     <div className="col-xs-5"><strong>Completed</strong></div>
                     <div className="col-xs-7">

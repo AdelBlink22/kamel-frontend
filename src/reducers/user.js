@@ -17,7 +17,7 @@ export default function (state = INITIAL_STATE, action) {
         case PROFILE_ERROR:
             return {...state, error: action.payload.error};
         case UPDATE_PROFILE:
-            return {...state, user: action.payload };
+            return {...state, user: action.payload, editable: false };
         default:
             return state;
     }

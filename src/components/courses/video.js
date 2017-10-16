@@ -36,7 +36,7 @@ class Video extends React.Component {
             width: '100%',
             playerVars: { // https://developers.google.com/youtube/player_parameters
                 autoplay: 0,
-                controls: 1,
+                controls: 0,
                 cc_load_policy: 0,
                 fs: 0,
                 iv_load_policy: 3,
