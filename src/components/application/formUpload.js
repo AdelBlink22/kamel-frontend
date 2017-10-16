@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 export default class FormUpload extends React.Component {
     constructor(props) {
         super(props);
-        this.state = { valid: false };
+        this.state = { valid: false, btnTitle: "Upload" };
         this.onFileChange = this.onFileChange.bind(this);
         this.submit = this.submit.bind(this);
     }
@@ -39,7 +39,7 @@ export default class FormUpload extends React.Component {
             formData.append(key, findDOMNode(this.refs[key]).files[0]);
         });
 
-        this.setState({ valid: false })
+        this.setState({ valid: false, btnTitle: "Uploading..." });
         this.props.handleSubmit(formData)
     }
 
@@ -154,7 +154,7 @@ export default class FormUpload extends React.Component {
                     type='submit'
                     disabled={!this.state.valid}
                     className='btn btn-success' >
-                    Upload
+                    {this.state.btnTitle}
                 </button>
             </form>
         );
