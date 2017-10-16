@@ -12,14 +12,21 @@ export default class FormUpload extends React.Component {
 
     onFileChange(e) {
 
+        console.log("state before :", this.state.numOfFiles);
+
         if (e.target.files[0]) {
             this.setState({numOfFiles: this.state.numOfFiles + 1 });
+
         } else {
             this.setState({numOfFiles: this.state.numOfFiles - 1 });
         }
 
-        if (this.state.numOfFiles >= 5) {
+        console.log("state after :", this.state.numOfFiles);
+
+        if (this.state.numOfFiles >= 4) {
             this.setState({valid: true });
+        } else {
+            this.setState({valid: false });
         }
     }
 

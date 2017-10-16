@@ -6,7 +6,7 @@ import { Cookies } from 'react-cookie'
 //
 
 // export const API_URL            = 'https://kaspercab-kamel.herokuapp.com/api';
-export const API_URL            = 'https://kaspercab-kamel.herokuapp.com/api';
+export const API_URL            = 'http://localhost:4000/api';
 export const CLIENT_ROOT_URL    = 'https://kamel-front-end.herokuapp.com';
 
 //https://kaspercab-kamel.herokuapp.com/api
