@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="57c69bad-53fb-4177-a05b-2c73de369981" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/actions/index.js" afterPath="$PROJECT_DIR$/src/actions/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/application/formUpload.js" afterPath="$PROJECT_DIR$/src/components/application/formUpload.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -51,11 +50,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/actions/index.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
-              <caret line="8" column="60" lean-forward="true" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="60" />
+              <caret line="8" column="76" lean-forward="false" selection-start-line="8" selection-start-column="76" selection-end-line="8" selection-end-column="76" />
               <folding>
                 <element signature="e#42#67#0" expanded="true" />
               </folding>
@@ -63,7 +62,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="formUpload.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="formUpload.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/application/formUpload.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="375">
@@ -208,8 +207,8 @@
         <option value="$PROJECT_DIR$/src/reducers/application.js" />
         <option value="$PROJECT_DIR$/src/components/application/index.js" />
         <option value="$PROJECT_DIR$/src/components/courses/video.js" />
-        <option value="$PROJECT_DIR$/src/actions/index.js" />
         <option value="$PROJECT_DIR$/src/components/application/formUpload.js" />
+        <option value="$PROJECT_DIR$/src/actions/index.js" />
       </list>
     </option>
   </component>
@@ -994,12 +993,12 @@
       <workItem from="1507327201807" duration="18536000" />
       <workItem from="1507734925015" duration="630000" />
       <workItem from="1507865005586" duration="27298000" />
-      <workItem from="1508037916428" duration="13428000" />
+      <workItem from="1508037916428" duration="13579000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="108032000" />
+    <option name="totallyTimeSpent" value="108183000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1427,16 +1426,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/actions/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="8" column="60" lean-forward="true" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="60" />
-          <folding>
-            <element signature="e#42#67#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/application/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="542">
@@ -1454,6 +1443,16 @@
           <caret line="25" column="38" lean-forward="false" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/actions/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="8" column="76" lean-forward="false" selection-start-line="8" selection-start-column="76" selection-end-line="8" selection-end-column="76" />
+          <folding>
+            <element signature="e#42#67#0" expanded="true" />
           </folding>
         </state>
       </provider>
