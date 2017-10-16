@@ -5,16 +5,21 @@ import PropTypes from 'prop-types';
 export default class FormUpload extends React.Component {
     constructor(props) {
         super(props);
-        this.state = { valid: false, btnTitle: "Upload" };
+        this.state = { valid: false, btnTitle: "Upload", numOfFiles: 0 };
         this.onFileChange = this.onFileChange.bind(this);
         this.submit = this.submit.bind(this);
     }
 
     onFileChange(e) {
+
         if (e.target.files[0]) {
-            this.setState({valid: true });
+            this.setState({numOfFiles: this.state.numOfFiles + 1 });
         } else {
-            this.setState( {valid: false } )
+            this.setState({numOfFiles: this.state.numOfFiles - 1 });
+        }
+
+        if (this.state.numOfFiles >= 5) {
+            this.setState({valid: true });
         }
     }
 
