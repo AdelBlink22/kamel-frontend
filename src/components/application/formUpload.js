@@ -39,6 +39,7 @@ export default class FormUpload extends React.Component {
             formData.append(key, findDOMNode(this.refs[key]).files[0]);
         });
 
+        this.setState({ valid: false })
         this.props.handleSubmit(formData)
     }
 
