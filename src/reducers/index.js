@@ -11,13 +11,23 @@ import coursesReducer from './courses'
 import applicationReducer from './application'
 import userReducer from './user'
 
+// admin reducers
+import adminUsersReducers from './admin/users'
+import adminVideoReducers from './admin/videos'
+import adminBadgesReducers from './admin/badges'
+
 const rootReducer = combineReducers({
     form: reduxReducer.plugin({}),
     auth: authReducer,
     user: userReducer,
     captain: captainReducer,
     courses: coursesReducer,
-    application: applicationReducer
+    application: applicationReducer,
+
+    // admin reducers
+    adminUsers: adminUsersReducers,
+    adminVideos: adminVideoReducers,
+    adminBadges: adminBadgesReducers
 });
 
 

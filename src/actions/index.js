@@ -37,9 +37,9 @@ export function postData(action, errorType, isAuthReq, url, dispatch, data) {
     const requestUrl = API_URL + url;
     let headers = {};
 
-    if (isAuthReq) {
-        headers = {headers: {Authorization: Cookies.load('token')}};
-    }
+    // if (isAuthReq) {
+    //     headers = {headers: {Authorization: Cookies.load('token')}};
+    // }
     axios.post(requestUrl, data, headers)
         .then((response) => {
         console.log("the response in post data: ", response.data);
