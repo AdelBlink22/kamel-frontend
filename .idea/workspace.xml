@@ -2,35 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="57c69bad-53fb-4177-a05b-2c73de369981" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/actions/admin/badges.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/actions/admin/users.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/actions/admin/videos.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/actions/types/admin/badges.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/actions/types/admin/users.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/actions/types/admin/videos.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/admin/badges/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/admin/badges/table.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/admin/dashboard/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/admin/layout/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/admin/layout/menu.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/admin/users/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/admin/users/newUser.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/admin/users/table.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/admin/users/updateForm.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/admin/users/userForm.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/admin/users/userUpdate.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/admin/videos/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/admin/videos/newForm.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/admin/videos/newVideo.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/admin/videos/table.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/admin/videos/updateForm.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/admin/videos/updateVideo.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/reducers/admin/badges.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/reducers/admin/users.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/reducers/admin/videos.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/admin/badges/badgesNew.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/admin/badges/newForm.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/actions/index.js" afterPath="$PROJECT_DIR$/src/actions/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/reducers/index.js" afterPath="$PROJECT_DIR$/src/reducers/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/admin/badges/index.js" afterPath="$PROJECT_DIR$/src/components/admin/badges/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/admin/badges/table.js" afterPath="$PROJECT_DIR$/src/components/admin/badges/table.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/reducers/admin/badges.js" afterPath="$PROJECT_DIR$/src/reducers/admin/badges.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/routes.js" afterPath="$PROJECT_DIR$/src/routes.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -43,11 +20,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="updateVideo.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/admin/videos/updateVideo.js">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/admin/badges/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="490">
-              <caret line="42" column="26" lean-forward="true" selection-start-line="35" selection-start-column="16" selection-end-line="42" selection-end-column="26" />
+            <state relative-caret-position="531">
+              <caret line="57" column="41" lean-forward="true" selection-start-line="57" selection-start-column="41" selection-end-line="57" selection-end-column="41" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -55,14 +32,46 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/components/admin/badges/index.js">
+      <file leaf-file-name="badgesNew.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/admin/badges/badgesNew.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="519">
-              <caret line="57" column="40" lean-forward="false" selection-start-line="57" selection-start-column="40" selection-end-line="57" selection-end-column="40" />
+            <state relative-caret-position="352">
+              <caret line="48" column="10" lean-forward="true" selection-start-line="48" selection-start-column="10" selection-end-line="48" selection-end-column="10" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="newForm.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/admin/badges/newForm.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/admin/users/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="244">
+              <caret line="45" column="16" lean-forward="true" selection-start-line="45" selection-start-column="16" selection-end-line="55" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="newUser.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/admin/users/newUser.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="550">
+              <caret line="45" column="26" lean-forward="true" selection-start-line="38" selection-start-column="16" selection-end-line="45" selection-end-column="26" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -70,9 +79,11 @@
       <file leaf-file-name="badges.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/reducers/admin/badges.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="5" column="128" lean-forward="false" selection-start-line="5" selection-start-column="128" selection-end-line="5" selection-end-column="128" />
-              <folding />
+            <state relative-caret-position="327">
+              <caret line="26" column="58" lean-forward="false" selection-start-line="26" selection-start-column="54" selection-end-line="26" selection-end-column="58" />
+              <folding>
+                <element signature="e#44#279#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -89,34 +100,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="badges.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/actions/types/admin/badges.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="14" column="53" lean-forward="false" selection-start-line="14" selection-start-column="53" selection-end-line="14" selection-end-column="53" />
-              <folding>
-                <element signature="e#0#42#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="table.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/admin/badges/table.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="38" lean-forward="false" selection-start-line="1" selection-start-column="38" selection-end-line="1" selection-end-column="38" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/admin/users/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="359">
-              <caret line="55" column="26" lean-forward="true" selection-start-line="45" selection-start-column="16" selection-end-line="55" selection-end-column="26" />
-              <folding />
+            <state relative-caret-position="181">
+              <caret line="24" column="39" lean-forward="false" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -124,8 +115,8 @@
       <file leaf-file-name="routes.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/routes.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="63" column="32" lean-forward="false" selection-start-line="63" selection-start-column="32" selection-end-line="63" selection-end-column="32" />
+            <state relative-caret-position="381">
+              <caret line="65" column="71" lean-forward="false" selection-start-line="65" selection-start-column="71" selection-end-line="65" selection-end-column="71" />
               <folding>
                 <element signature="e#680#743#0" expanded="true" />
               </folding>
@@ -145,25 +136,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="updateForm.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/admin/videos/updateForm.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
-              <caret line="29" column="82" lean-forward="false" selection-start-line="29" selection-start-column="82" selection-end-line="29" selection-end-column="82" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="React JavaScript File" />
         <option value="JavaScript File" />
+        <option value="React JavaScript File" />
       </list>
     </option>
   </component>
@@ -187,8 +166,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/actions/types/user.js" />
-        <option value="$PROJECT_DIR$/src/components/profile/form.js" />
         <option value="$PROJECT_DIR$/src/components/layout/header.js" />
         <option value="$PROJECT_DIR$/src/components/dashboard/index.js" />
         <option value="$PROJECT_DIR$/src/components/courses/index.js" />
@@ -231,13 +208,15 @@
         <option value="$PROJECT_DIR$/src/reducers/admin/videos.js" />
         <option value="$PROJECT_DIR$/src/components/admin/videos/updateForm.js" />
         <option value="$PROJECT_DIR$/src/components/admin/videos/updateVideo.js" />
-        <option value="$PROJECT_DIR$/src/routes.js" />
-        <option value="$PROJECT_DIR$/src/components/admin/badges/table.js" />
         <option value="$PROJECT_DIR$/src/actions/admin/badges.js" />
         <option value="$PROJECT_DIR$/src/actions/types/admin/badges.js" />
-        <option value="$PROJECT_DIR$/src/reducers/admin/badges.js" />
         <option value="$PROJECT_DIR$/src/reducers/index.js" />
+        <option value="$PROJECT_DIR$/src/routes.js" />
+        <option value="$PROJECT_DIR$/src/components/admin/badges/newForm.js" />
+        <option value="$PROJECT_DIR$/src/components/admin/badges/badgesNew.js" />
         <option value="$PROJECT_DIR$/src/components/admin/badges/index.js" />
+        <option value="$PROJECT_DIR$/src/components/admin/badges/table.js" />
+        <option value="$PROJECT_DIR$/src/reducers/admin/badges.js" />
       </list>
     </option>
   </component>
@@ -1032,12 +1011,12 @@
       <workItem from="1507865005586" duration="27298000" />
       <workItem from="1508037916428" duration="15325000" />
       <workItem from="1508556551669" duration="694000" />
-      <workItem from="1508639771295" duration="24467000" />
+      <workItem from="1508639771295" duration="27980000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="135090000" />
+    <option name="totallyTimeSpent" value="138603000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1097,20 +1076,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/components/application/field.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="33" column="50" lean-forward="false" selection-start-line="33" selection-start-column="50" selection-end-line="33" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/application/test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="509">
-          <caret line="141" column="24" lean-forward="true" selection-start-line="141" selection-start-column="24" selection-end-line="141" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/reducers/auth.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -1328,16 +1293,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/admin/users/newUser.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="49" column="64" lean-forward="false" selection-start-line="49" selection-start-column="56" selection-end-line="49" selection-end-column="64" />
-          <folding>
-            <element signature="e#0#26#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/admin/users/table.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -1401,7 +1356,7 @@
         <state relative-caret-position="516">
           <caret line="58" column="26" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="58" selection-end-column="26" />
           <folding>
-            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#0#26#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1421,7 +1376,7 @@
         <state relative-caret-position="415">
           <caret line="33" column="39" lean-forward="true" selection-start-line="33" selection-start-column="39" selection-end-line="33" selection-end-column="39" />
           <folding>
-            <element signature="e#44#100#0" expanded="true" />
+            <element signature="e#44#100#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1431,7 +1386,7 @@
         <state relative-caret-position="930">
           <caret line="62" column="0" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="72" selection-end-column="68" />
           <folding>
-            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#0#26#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1449,7 +1404,7 @@
         <state relative-caret-position="420">
           <caret line="30" column="65" lean-forward="true" selection-start-line="30" selection-start-column="65" selection-end-line="30" selection-end-column="65" />
           <folding>
-            <element signature="e#43#291#0" expanded="true" />
+            <element signature="e#43#291#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1459,7 +1414,7 @@
         <state relative-caret-position="201">
           <caret line="29" column="82" lean-forward="false" selection-start-line="29" selection-start-column="82" selection-end-line="29" selection-end-column="82" />
           <folding>
-            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#0#26#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1469,16 +1424,8 @@
         <state relative-caret-position="490">
           <caret line="42" column="26" lean-forward="true" selection-start-line="35" selection-start-column="16" selection-end-line="42" selection-end-column="26" />
           <folding>
-            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#0#26#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/admin/users/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="55" column="26" lean-forward="true" selection-start-line="45" selection-start-column="16" selection-end-line="55" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1492,36 +1439,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/admin/badges/table.js">
+    <entry file="file://$PROJECT_DIR$/src/components/admin/users/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="38" lean-forward="false" selection-start-line="1" selection-start-column="38" selection-end-line="1" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/actions/admin/badges.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="13" column="39" lean-forward="true" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
-          <folding>
-            <element signature="e#44#109#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/reducers/admin/badges.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="5" column="128" lean-forward="false" selection-start-line="5" selection-start-column="128" selection-end-line="5" selection-end-column="128" />
+        <state relative-caret-position="244">
+          <caret line="45" column="16" lean-forward="true" selection-start-line="45" selection-start-column="16" selection-end-line="55" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/routes.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="63" column="32" lean-forward="false" selection-start-line="63" selection-start-column="32" selection-end-line="63" selection-end-column="32" />
+        <state relative-caret-position="381">
+          <caret line="65" column="71" lean-forward="false" selection-start-line="65" selection-start-column="71" selection-end-line="65" selection-end-column="71" />
           <folding>
             <element signature="e#680#743#0" expanded="true" />
           </folding>
@@ -1538,10 +1467,68 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/admin/badges/newForm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/admin/badges/badgesNew.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="48" column="10" lean-forward="true" selection-start-line="48" selection-start-column="10" selection-end-line="48" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/admin/badges/table.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="24" column="39" lean-forward="false" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/actions/admin/badges.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="13" column="39" lean-forward="true" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
+          <folding>
+            <element signature="e#44#109#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/reducers/admin/badges.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="26" column="58" lean-forward="false" selection-start-line="26" selection-start-column="54" selection-end-line="26" selection-end-column="58" />
+          <folding>
+            <element signature="e#44#279#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/admin/users/newUser.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="45" column="26" lean-forward="true" selection-start-line="38" selection-start-column="16" selection-end-line="45" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/admin/badges/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="519">
-          <caret line="57" column="40" lean-forward="false" selection-start-line="57" selection-start-column="40" selection-end-line="57" selection-end-column="40" />
+        <state relative-caret-position="531">
+          <caret line="57" column="41" lean-forward="true" selection-start-line="57" selection-start-column="41" selection-end-line="57" selection-end-column="41" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>

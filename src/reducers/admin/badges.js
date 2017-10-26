@@ -9,17 +9,18 @@ import { FETCH_BADGES, FETCH_BADGES_ERROR, CREATE_BADGE, CREATE_BADGE_ERROR, SEA
 const INITIAL_STATE = {badges: [], badge: {}, search:'', message:'', error:''};
 
 export default function (state = INITIAL_STATE, action) {
+    console.log("PAYLOAD: ",action.payload);
     switch (action.type){
         case FETCH_BADGES:
-            return { ...state, badges: action.payload };
+            return { ...state, badges: action.payload, error: '', message:'' };
         case FETCH_BADGES_ERROR:
             return { ...state, error: action.payload.data.error };
         case FETCH_BADGE:
-            return { ...state, badge: action.payload };
+            return { ...state, badge: action.payload, error: '', message:'' };
         case FETCH_BADGE_ERROR:
             return { ...state, error: action.payload.data.error };
         case CREATE_BADGE:
-            return { ...state, badges: state.badges.concat(action.payload.badge), message: action.payload.message };
+            return { ...state, message: action.payload.message };
         case CREATE_BADGE_ERROR:
             return { ...state, error: action.payload.data.error };
         case DELETE_BADGE:

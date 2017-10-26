@@ -32,6 +32,7 @@ import NewVideo from './components/admin/videos/newVideo'
 import UpdateVideo from './components/admin/videos/updateVideo'
 
 import Badges from './components/admin/badges/index'
+import NewBadge from './components/admin/badges/badgesNew'
 
 class Routes extends Component {
     render(){
@@ -62,6 +63,7 @@ class Routes extends Component {
 
 
                     <Route exact path="/admin/badges" component={Badges} />
+                    <Route path="/admin/badges/new" component={NewBadge}/>
 
                     <Route component={NotFound}/>
 

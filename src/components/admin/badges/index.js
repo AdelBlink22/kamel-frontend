@@ -4,7 +4,7 @@ import Table from './table'
 import { Link } from 'react-router-dom'
 import { connect } from 'react-redux'
 
-import { fetchBadges } from '../../../actions/admin/badges'
+import { fetchBadges, deleteBadge } from '../../../actions/admin/badges'
 
 class Badges extends React.Component {
 
@@ -45,8 +45,8 @@ class Badges extends React.Component {
         return (
             <AdminLayout>
                 <div className="col-sm-9">
-                    <div className="title">Users
-                        <Link to="users/new" >
+                    <div className="title">Badges
+                        <Link to="/admin/badges/new" >
                             <button href="#" className="btn btn-sec pull-right">
                                 <i className="fa fa-plus"></i> Add New Badge
                             </button>
@@ -73,4 +73,4 @@ function mapStateToProp(state) {
     }
 }
 
-export default connect ( mapStateToProp, { fetchBadges })(Badges)
+export default connect ( mapStateToProp, { fetchBadges, deleteBadge })(Badges)
