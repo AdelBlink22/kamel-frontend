@@ -26,7 +26,12 @@ class Application extends React.Component {
         const { cookies } = this.props;
         if (!cookies.get('user')) { this.props.history.push('/login')}
         else {
-            this.props.fetchApplication(cookies.get('user')._id);
+            if (cookies.get('user').role === 'Admin') {
+                this.props.history.push('/admin')
+            } else {
+                this.props.fetchApplication(cookies.get('user')._id);
+            }
+
         }
 
     }

@@ -13,7 +13,12 @@ class Courses extends React.Component {
         const { cookies } = this.props;
         if (!cookies.get('user')) { this.props.history.push('/login')}
         else {
-            this.props.fetchCourses();
+            if (cookies.get('user').role === 'Admin') {
+                this.props.history.push('/admin')
+            } else {
+                this.props.fetchCourses();
+            }
+
         }
     }
 

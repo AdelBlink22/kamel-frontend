@@ -15,7 +15,12 @@ class Video extends React.Component {
         const { cookies } = this.props;
         if (!cookies.get('user')) { this.props.history.push('/login')}
         else {
-            this.props.fetchVideo(this.props.match.params.id);
+            if (cookies.get('user').role === 'Admin') {
+                this.props.history.push('/admin')
+            } else {
+                this.props.fetchVideo(this.props.match.params.id);
+            }
+
         }
     }
 

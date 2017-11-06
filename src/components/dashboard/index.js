@@ -22,8 +22,13 @@ class Dashboard extends React.Component {
         const { cookies } = this.props;
         if (!cookies.get('user')) { this.props.history.push('/login')}
         else {
-            this.props.fetchCoursesCompleted(cookies.get('user')._id);
-            this.props.fetchApplicationProgress(cookies.get('user')._id);
+
+            if (cookies.get('user').role === 'Admin') {
+                this.props.history.push('/admin')
+            } else {
+                this.props.fetchCoursesCompleted(cookies.get('user')._id);
+                this.props.fetchApplicationProgress(cookies.get('user')._id);
+            }
         }
     }
 

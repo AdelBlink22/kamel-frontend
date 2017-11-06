@@ -21,9 +21,9 @@ class Header extends React.Component {
                             {/*<span className="highlight-dot"></span>*/}
                         {/*</i>*/}
                     {/*</a>*/}
-                    {/*<a href="profile-show.html">*/}
-                        {/*<i className="fa fa-user"></i>*/}
-                    {/*</a>*/}
+                    <a href="/admin">
+                        <i className="fa fa-user"></i>
+                    </a>
                     <a onClick={this.handleLogout}>
                         <i className="fa fa-sign-out"></i>
                     </a>
