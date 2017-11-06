@@ -2,6 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom'
 import { connect } from 'react-redux'
 
+import { withRouter } from 'react-router-dom'
+
+// with cookie
+import { withCookies } from 'react-cookie'
 
 import Layout from '../layout/index'
 import UpdateForm from './updateForm'
@@ -9,6 +13,15 @@ import { updateUser } from '../../../actions/admin/users'
 
 
 class UserUpdate extends React.Component {
+
+    componentWillMount(){
+        const { cookies } = this.props;
+        if (cookies.get('user')){
+            if (cookies.get('user').role === 'Captain') { this.props.history.push('/dashboard')}
+        } else {
+            this.props.history.push('/login')
+        }
+    }
 
     handelSubmit = (values) =>{
         console.log('Updated Value: ',values);
@@ -70,4 +83,4 @@ function mapStateToProp(state) {
 }
 
 
-export default connect( mapStateToProp, { updateUser })(UserUpdate);
+export default connect( mapStateToProp, { updateUser })(withRouter(withCookies(UserUpdate)));

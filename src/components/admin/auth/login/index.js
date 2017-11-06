@@ -13,19 +13,12 @@ import { withCookies } from 'react-cookie'
 import LoginForm from './form'
 
 // Login user action
-import {loginUser} from '../../../actions/auth'
+import {adminLogin} from '../../../../actions/auth'
 
 class Login extends React.Component {
     componentWillMount(){
         const { cookies } = this.props;
-        if (cookies.get('user')) {
-            if (cookies.get('user').role === 'Captain') {
-                this.props.history.push('/dashboard')
-            }
-            if (cookies.get('user').role === 'Admin') {
-                this.props.history.push('/admin')
-            }
-        }
+        if (cookies.get('user').role === 'admin') { this.props.history.push('/admin/dashboard')}
     }
 
     componentWillUpdate(){
@@ -83,4 +76,4 @@ function mapStateToProps(state) {
     }
 }
 
-export default connect(mapStateToProps, { loginUser })(withRouter(withCookies(Login)));
+export default connect(mapStateToProps, { adminLogin })(withRouter(withCookies(Login)));

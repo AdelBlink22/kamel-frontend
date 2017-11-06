@@ -4,12 +4,26 @@ import { fetchVideos, deleteVideo } from '../../../actions/admin/videos'
 import { Link } from 'react-router-dom'
 import Layout from '../layout/index'
 
+import { withRouter } from 'react-router-dom'
+
+// with cookie
+import { withCookies } from 'react-cookie'
+
 import Table from './table'
 
 class Videos extends React.Component {
 
     componentWillMount(){
-        this.props.fetchVideos();
+        const { cookies } = this.props;
+        if (cookies.get('user')){
+            if (cookies.get('user').role === 'Captain') { this.props.history.push('/dashboard')}
+            else {
+                this.props.fetchVideos();
+            }
+        } else {
+            this.props.history.push('/login')
+        }
+
     }
 
     handleDelete = (event) =>{
@@ -75,4 +89,4 @@ function mapStateToProp(state) {
     }
 }
 
-export default connect (mapStateToProp , {fetchVideos, deleteVideo})(Videos)
+export default connect (mapStateToProp , {fetchVideos, deleteVideo})(withRouter(withCookies(Videos)))

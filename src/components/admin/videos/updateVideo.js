@@ -5,8 +5,21 @@ import UpdateForm from './updateForm'
 import { connect } from 'react-redux'
 import { updateVideo } from '../../../actions/admin/videos'
 
+import { withRouter } from 'react-router-dom'
+
+// with cookie
+import { withCookies } from 'react-cookie'
+
 class UpdateVideo extends React.Component {
 
+    componentWillMount(){
+        const { cookies } = this.props;
+        if (cookies.get('user')){
+            if (cookies.get('user').role === 'Captain') { this.props.history.push('/dashboard')}
+        } else {
+            this.props.history.push('/login')
+        }
+    }
     handelSubmit = (values) =>{
         console.log('Updated Value: ',values);
         this.props.updateVideo(this.props.match.params.id, values);
@@ -62,4 +75,4 @@ function mapStateToProp(state) {
 }
 
 
-export default connect( mapStateToProp, { updateVideo })(UpdateVideo);
+export default connect( mapStateToProp, { updateVideo })(withRouter(withCookies(UpdateVideo)));

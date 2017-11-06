@@ -15,6 +15,8 @@ import userReducer from './user'
 import adminUsersReducers from './admin/users'
 import adminVideoReducers from './admin/videos'
 import adminBadgesReducers from './admin/badges'
+import adminRequests from './admin/requests'
+import adminDocs from './admin/docs'
 
 const rootReducer = combineReducers({
     form: reduxReducer.plugin({}),
@@ -27,7 +29,9 @@ const rootReducer = combineReducers({
     // admin reducers
     adminUsers: adminUsersReducers,
     adminVideos: adminVideoReducers,
-    adminBadges: adminBadgesReducers
+    adminBadges: adminBadgesReducers,
+    adminRequests: adminRequests,
+    adminDocs: adminDocs
 });
 
 

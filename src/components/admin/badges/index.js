@@ -4,11 +4,25 @@ import Table from './table'
 import { Link } from 'react-router-dom'
 import { connect } from 'react-redux'
 
+
+import { withRouter } from 'react-router-dom'
+
+// with cookie
+import { withCookies } from 'react-cookie'
+
+
 import { fetchBadges, deleteBadge } from '../../../actions/admin/badges'
 
 class Badges extends React.Component {
 
     componentWillMount(){
+        const { cookies } = this.props;
+        if (cookies.get('user')){
+            if (cookies.get('user').role === 'Captain') { this.props.history.push('/dashboard')}
+        } else {
+            this.props.history.push('/login')
+        }
+
         this.props.fetchBadges();
     }
 
@@ -73,4 +87,4 @@ function mapStateToProp(state) {
     }
 }
 
-export default connect ( mapStateToProp, { fetchBadges, deleteBadge })(Badges)
+export default connect ( mapStateToProp, { fetchBadges, deleteBadge })(withRouter(withCookies(Badges)))

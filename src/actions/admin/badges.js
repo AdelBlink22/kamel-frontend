@@ -6,6 +6,8 @@ import { getData, postData, deleteData, putData } from '../index'
 import { FETCH_BADGES, FETCH_BADGES_ERROR, CREATE_BADGE, CREATE_BADGE_ERROR, SEARCH_BADGES,
     DELETE_BADGE, DELETE_BADGE_ERROR, UPDATE_BADGE, UPDATE_BADGE_ERROR,
     FETCH_BADGE, FETCH_BADGE_ERROR} from '../types/admin/badges';
+
+
 export function fetchBadges() {
     const url = '/admin/badges';
     return dispatch => getData(FETCH_BADGES, FETCH_BADGES_ERROR, true, url, dispatch);

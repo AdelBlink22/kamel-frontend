@@ -2,7 +2,22 @@ import React from 'react';
 
 import AdminLayout from '../layout/index'
 
-export default class Dashboard extends React.Component {
+import { withRouter } from 'react-router-dom'
+
+// with cookie
+import { withCookies } from 'react-cookie'
+
+import {connect } from 'react-redux'
+
+class Dashboard extends React.Component {
+    componentWillMount(){
+        const { cookies } = this.props;
+        if (cookies.get('user')){
+            if (cookies.get('user').role === 'Captain') { this.props.history.push('/dashboard')}
+        } else {
+            this.props.history.push('/login')
+        }
+    }
     render() {
         return (
             <AdminLayout>
@@ -51,3 +66,9 @@ export default class Dashboard extends React.Component {
     }
 
 }
+
+function mapStateToProps() {
+    return ''
+}
+
+export default connect(mapStateToProps)(withRouter(withCookies(Dashboard)))

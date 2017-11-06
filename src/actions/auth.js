@@ -38,6 +38,21 @@ export function loginUser({ email, password }) {
     };
 }
 
+export function adminLogin({ email, password }) {
+    return function (dispatch) {
+        axios.post(`${API_URL}/admin/auth/login`, { email, password })
+            .then((response) => {
+                cookie.set('token', response.data.token);
+                cookie.set('user', response.data.user, { path: '/admin' });
+                dispatch({ type: AUTH_USER });
+                window.location.href = `${CLIENT_ROOT_URL}/admin/dashboard`;
+            })
+            .catch((error) => {
+                errorHandler(dispatch, error, AUTH_ERROR);
+            });
+    };
+}
+
 // register user then redirect to dashboard
 export function registerUser({ email, phone, password }) {
     return function (dispatch) {

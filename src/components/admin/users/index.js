@@ -4,13 +4,27 @@ import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
 import {fetchUsers, deleteUser} from '../../../actions/admin/users'
 
+import { withRouter } from 'react-router-dom'
+
+// with cookie
+import { withCookies } from 'react-cookie'
+
 import Table from './table'
 
 class Users extends React.Component {
 
     componentWillMount() {
         // Fetch inbox (conversations involving current user)
-        this.props.fetchUsers();
+        const { cookies } = this.props;
+        if (cookies.get('user')){
+            if (cookies.get('user').role === 'Captain') { this.props.history.push('/dashboard')}
+            else {
+                this.props.fetchUsers();
+            }
+        } else {
+            this.props.history.push('/login')
+        }
+
     }
 
     reloadPage(e){
@@ -78,4 +92,4 @@ function mapStateToProps(state) {
     }
 }
 
-export default connect (mapStateToProps, {fetchUsers, deleteUser})(Users)
+export default connect (mapStateToProps, {fetchUsers, deleteUser})(withRouter(withCookies(Users)))

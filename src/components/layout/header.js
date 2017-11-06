@@ -16,15 +16,15 @@ class Header extends React.Component {
         return (
             <div className="col-xs-6">
                 <div className="user-profile-menu">
-                    <a href="request-list.html">
-                        <i className="fa fa-bell">
-                            <span className="highlight-dot"></span>
-                        </i>
-                    </a>
-                    <a href="profile-show.html">
-                        <i className="fa fa-user"></i>
-                    </a>
-                    <a href="home.html">
+                    {/*<a href="request-list.html">*/}
+                        {/*<i className="fa fa-bell">*/}
+                            {/*<span className="highlight-dot"></span>*/}
+                        {/*</i>*/}
+                    {/*</a>*/}
+                    {/*<a href="profile-show.html">*/}
+                        {/*<i className="fa fa-user"></i>*/}
+                    {/*</a>*/}
+                    <a onClick={this.handleLogout}>
                         <i className="fa fa-sign-out"></i>
                     </a>
                 </div>

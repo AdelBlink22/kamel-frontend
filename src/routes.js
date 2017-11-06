@@ -34,6 +34,10 @@ import UpdateVideo from './components/admin/videos/updateVideo'
 import Badges from './components/admin/badges/index'
 import NewBadge from './components/admin/badges/badgesNew'
 
+import Requests from './components/admin/requests/index'
+import ViewRequest from './components/admin/requests/viewRequest'
+import Wizard from './components/admin/requests/process/wizard'
+
 class Routes extends Component {
     render(){
         return(
@@ -49,8 +53,7 @@ class Routes extends Component {
                     <Route path="/profile" component={Profile}/>
                     <Route path="/application" component={Application}/>
 
-                    <Route exact path="/admin" component={NotFound}/>
-                    <Route path="/admin/dashboard" component={AdminDashboard}/>
+                    <Route exact path="/admin" component={AdminDashboard}/>
 
                     <Route exact path="/admin/users" component={Users}/>
                     <Route path="/admin/users/new" component={NewUser}/>
@@ -64,6 +67,10 @@ class Routes extends Component {
 
                     <Route exact path="/admin/badges" component={Badges} />
                     <Route path="/admin/badges/new" component={NewBadge}/>
+                    {/* badge update route */}
+
+                    <Route exact path="/admin/requests" component={Requests}/>
+                    <Route path="/admin/requests/:id" component={Wizard}/>
 
                     <Route component={NotFound}/>
 

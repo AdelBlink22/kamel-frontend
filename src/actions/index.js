@@ -22,12 +22,16 @@ export function errorHandler(dispatch, error, type) {
         //return dispatch(logoutUser(errorMessage));
     }
 
+    if (error.status === 403){
+        errorMessage = 'There is no document'
+    }
+
     if (error.status === 404) {
         errorMessage = 'Nothing was found.';
     }
 
     dispatch({
-        type,
+        type: type,
         payload: errorMessage,
     });
 }
@@ -67,7 +71,7 @@ export function uploadData(action, errorType, isAuth, url, dispatch, data) {
     axios.post(requestUrl, data, headers)
         .then((response) => {
             console.log('Response: ',response);
-            console.log("With Action Type: ", action)
+            console.log("With Action Type: ", action);
             dispatch({
                 type: action,
                 payload: response.data
@@ -99,6 +103,7 @@ export function getData(action, errorType, isAuthReq, url, dispatch) {
         .catch((error) => {
 
             console.log('ERROR: ',error);
+            console.log('ERROR RESPONSE: ',error.response);
             errorHandler(dispatch, error.response, errorType);
         });
 }

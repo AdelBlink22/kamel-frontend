@@ -2,11 +2,25 @@ import React from 'react';
 import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
 
+import { withRouter } from 'react-router-dom'
+
+// with cookie
+import { withCookies } from 'react-cookie'
+
 import AdminLayout from '../layout/index'
 import NewForm from './newForm'
 import {createVideo} from '../../../actions/admin/videos'
 
 class NewVideo extends React.Component {
+
+    componentWillMount(){
+        const { cookies } = this.props;
+        if (cookies.get('user')){
+            if (cookies.get('user').role === 'Captain') { this.props.history.push('/dashboard')}
+        } else {
+            this.props.history.push('/login')
+        }
+    }
 
     handelSubmit = (values) =>{
         this.props.createVideo(values);
@@ -59,4 +73,4 @@ function mapStateToProp(state) {
 
 
 
-export default connect (mapStateToProp, {createVideo})(NewVideo)
+export default connect (mapStateToProp, {createVideo})(withRouter(withCookies(NewVideo)))

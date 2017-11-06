@@ -4,6 +4,10 @@ import { createUser } from '../../../actions/admin/users'
 
 import { Link } from 'react-router-dom'
 
+import { withRouter } from 'react-router-dom'
+
+// with cookie
+import { withCookies } from 'react-cookie'
 
 import AdminLayout from '../layout/index'
 import UserForm from './userForm'
@@ -13,6 +17,15 @@ class NewUser extends React.Component {
     handelSubmit = (values) =>{
         console.log(values);
         this.props.createUser(values);
+    };
+
+    componentWillMount(){
+        const { cookies } = this.props;
+        if (cookies.get('user')){
+            if (cookies.get('user').role === 'Captain') { this.props.history.push('/dashboard')}
+        } else {
+            this.props.history.push('/login')
+        }
     }
 
     renderAlerts(){
@@ -63,4 +76,4 @@ function mapStateToProp(state) {
 }
 
 
-export default connect (mapStateToProp, { createUser })(NewUser)
+export default connect (mapStateToProp, { createUser })(withRouter(withCookies(NewUser)))
