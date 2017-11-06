@@ -29,7 +29,15 @@ class Login extends React.Component {
     }
 
     componentWillUpdate(){
-        if (this.props.authenticated){ this.props.history.push('/dashboard') }
+        if (this.props.authenticated) {
+            const { cookies } = this.props;
+            if (cookies.get('user').role === 'Captain') {
+                this.props.history.push('/dashboard')
+            }
+            if (cookies.get('user').role === 'Admin') {
+                this.props.history.push('/admin')
+            }
+        }
     }
 
     // handles login action from

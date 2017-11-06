@@ -2,46 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="57c69bad-53fb-4177-a05b-2c73de369981" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/actions/admin/docs.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/actions/admin/requests.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/actions/types/admin/docs.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/actions/types/admin/requests.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/admin/auth/login/form.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/admin/auth/login/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/admin/auth/register/form.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/admin/auth/register/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/admin/requests/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/admin/requests/process/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/admin/requests/process/renderField.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/admin/requests/process/step1.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/admin/requests/process/step2.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/admin/requests/process/step3.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/admin/requests/process/step4.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/admin/requests/process/step5.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/admin/requests/process/step6.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/admin/requests/process/validate.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/admin/requests/process/wizard.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/admin/requests/table.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/admin/requests/viewRequest.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/reducers/admin/docs.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/reducers/admin/requests.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/actions/admin/badges.js" afterPath="$PROJECT_DIR$/src/actions/admin/badges.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/actions/auth.js" afterPath="$PROJECT_DIR$/src/actions/auth.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/actions/index.js" afterPath="$PROJECT_DIR$/src/actions/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/admin/badges/index.js" afterPath="$PROJECT_DIR$/src/components/admin/badges/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/admin/dashboard/index.js" afterPath="$PROJECT_DIR$/src/components/admin/dashboard/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/admin/users/index.js" afterPath="$PROJECT_DIR$/src/components/admin/users/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/admin/users/newUser.js" afterPath="$PROJECT_DIR$/src/components/admin/users/newUser.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/admin/users/userUpdate.js" afterPath="$PROJECT_DIR$/src/components/admin/users/userUpdate.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/admin/videos/index.js" afterPath="$PROJECT_DIR$/src/components/admin/videos/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/admin/videos/newVideo.js" afterPath="$PROJECT_DIR$/src/components/admin/videos/newVideo.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/admin/videos/updateVideo.js" afterPath="$PROJECT_DIR$/src/components/admin/videos/updateVideo.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/auth/login/index.js" afterPath="$PROJECT_DIR$/src/components/auth/login/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/layout/header.js" afterPath="$PROJECT_DIR$/src/components/layout/header.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/reducers/index.js" afterPath="$PROJECT_DIR$/src/reducers/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/routes.js" afterPath="$PROJECT_DIR$/src/routes.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -115,11 +77,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="header.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="header.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/layout/header.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="31">
-              <caret line="18" column="20" lean-forward="false" selection-start-line="18" selection-start-column="23" selection-end-line="25" selection-end-column="27" />
+              <caret line="18" column="54" lean-forward="true" selection-start-line="18" selection-start-column="54" selection-end-line="18" selection-end-column="54" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/auth/login/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="32" column="43" lean-forward="false" selection-start-line="32" selection-start-column="43" selection-end-line="32" selection-end-column="43" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -159,19 +133,6 @@
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
                 <element signature="e#133#175#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/admin/requests/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="22" column="9" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="22" selection-end-column="9" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-                <element signature="e#128#170#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -247,7 +208,6 @@
         <option value="$PROJECT_DIR$/src/actions/auth.js" />
         <option value="$PROJECT_DIR$/src/components/admin/auth/login/index.js" />
         <option value="$PROJECT_DIR$/src/routes.js" />
-        <option value="$PROJECT_DIR$/src/components/auth/login/index.js" />
         <option value="$PROJECT_DIR$/src/components/admin/badges/index.js" />
         <option value="$PROJECT_DIR$/src/components/admin/dashboard/index.js" />
         <option value="$PROJECT_DIR$/src/components/admin/requests/index.js" />
@@ -259,6 +219,7 @@
         <option value="$PROJECT_DIR$/src/components/admin/videos/newVideo.js" />
         <option value="$PROJECT_DIR$/src/components/admin/videos/updateVideo.js" />
         <option value="$PROJECT_DIR$/src/components/layout/header.js" />
+        <option value="$PROJECT_DIR$/src/components/auth/login/index.js" />
       </list>
     </option>
   </component>
@@ -456,6 +417,54 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="layout" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kamel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kamel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="auth" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kamel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kamel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="auth" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="login" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -945,12 +954,12 @@
       <workItem from="1508037916428" duration="15325000" />
       <workItem from="1508556551669" duration="694000" />
       <workItem from="1508639771295" duration="53436000" />
-      <workItem from="1509765650738" duration="43011000" />
+      <workItem from="1509765650738" duration="43579000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="207070000" />
+    <option name="totallyTimeSpent" value="207638000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1340,16 +1349,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/auth/login/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="23" column="13" lean-forward="true" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/actions/auth.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="645">
@@ -1468,7 +1467,17 @@
     <entry file="file://$PROJECT_DIR$/src/components/layout/header.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="31">
-          <caret line="18" column="20" lean-forward="false" selection-start-line="18" selection-start-column="23" selection-end-line="25" selection-end-column="27" />
+          <caret line="18" column="54" lean-forward="true" selection-start-line="18" selection-start-column="54" selection-end-line="18" selection-end-column="54" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/auth/login/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="32" column="43" lean-forward="false" selection-start-line="32" selection-start-column="43" selection-end-line="32" selection-end-column="43" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
